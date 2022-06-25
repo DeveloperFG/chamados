@@ -1,0 +1,53 @@
+
+form textarea{
+    height: 105px;
+    resize: none;
+}
+
+form input[type='radio']{
+    margin: 15px 0;
+}
+
+form input[type='radio']:not(:first-child) {
+   margin-left: 15px;
+}
+
+.status span{
+    padding-left: .5em;
+    font-size: 1.3em;
+}
+
+.complemento{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px){
+  
+  .status span{
+    padding-left: .5em;
+    font-size: 1.0em;
+}
+
+}
+
+/* Spinner CSS */
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner .6s linear infinite;
+}
